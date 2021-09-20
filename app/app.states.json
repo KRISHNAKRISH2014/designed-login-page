@@ -1,0 +1,21 @@
+[
+	{
+		"name": "login",
+		"default": true,
+		"url": "/login",
+		"template": "<login></login>",
+		"module": "app/login/login.module"
+	},
+	{
+		"name": "forgotten-password",
+		"url": "/forgotten-password",
+		"template": "<forgotten-password></forgotten-password>",
+		"module": "app/forgotten-password/forgotten.password.module"
+	},
+	{
+		"name": "dashboard",
+		"url": "/dashboard",
+		"template": "<dashboard></dashboard>",
+		"module": "app/dashboard/dashboard.module"
+	}
+]

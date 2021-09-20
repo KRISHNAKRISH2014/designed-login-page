@@ -1,0 +1,66 @@
+{
+  "name": "angular-systemjs",
+  "version": "1.0.0",
+  "description": "Angular project based on version 1.5 with systemjs",
+  "main": "system.config.js",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "es6-module-loader": "^0.17.11",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-processhtml": "^0.4.0",
+    "grunt-replace": "^1.0.1",
+    "grunt-systemjs-builder": "^0.2.7",
+    "http-server": "^0.9.0",
+    "jshint-stylish": "^2.2.0",
+    "jspm": "^0.16.39",
+    "superstatic": "^4.0.3",
+    "systemjs": "^0.19.31",
+    "systemjs-builder": "^0.15.23"
+  },
+  "jspm": {
+    "configFile": "system.config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.8",
+      "angular-animate": "github:angular/bower-angular-animate@^1.5.8",
+      "angular-aria": "github:angular/bower-angular-aria@^1.5.8",
+      "angular-cookies": "github:angular/bower-angular-cookies@^1.5.8",
+      "angular-dynamic-locale": "github:lgalfaso/angular-dynamic-locale@^0.1.32",
+      "angular-material": "github:angular/bower-material@^1.0.9",
+      "angular-messages": "github:angular/bower-angular-messages@^1.5.8",
+      "angular-resource": "github:angular/bower-angular-resource@^1.5.8",
+      "angular-sanitize": "github:angular/bower-angular-sanitize@^1.5.8",
+      "angular-translate": "github:angular-translate/bower-angular-translate@^2.11.0",
+      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@^2.11.0",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "css": "github:systemjs/plugin-css@^0.1.25",
+      "json": "github:systemjs/plugin-json@^0.1.2",
+      "ocombe/ocLazyLoad": "github:ocombe/ocLazyLoad@^1.0.9",
+      "text": "github:systemjs/plugin-text@^0.0.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/david-talabard/angular-systemjs"
+  },
+  "keywords": [
+    "angular",
+    "lazy",
+    "loading",
+    "components",
+    "protractor"
+  ],
+  "author": "David Talabard",
+  "license": "ISC",
+  "scripts": {
+    "dev": "superstatic --config ../server.json --port 8000",
+    "build": "grunt build && cd ./build/ && superstatic --config ../server.json --port 8001"
+  }
+}
